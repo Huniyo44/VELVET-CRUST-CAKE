@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Menu</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">Velvet Crust</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" id="cart-link">Cart (0)</a>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Our Menu</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="images/Choco-Cake.webp" alt="Chocolate Bread">
+            <h3>Powdered Chocolate Cake</h3>
+            <p>Soft and rich cocoa flavor, with powdered sugar.</p>
+            <p class="price">₱349.00</p>
+            <button class="add-to-cart" data-name="Powdered Chocolate Cake" data-price="349.00">Add to Cart</button>
+        </div>
+
+
+        <div class="card">
+            <img src="images/Chocolate-Truffle.webp" alt="Chocolate Bread">
+            <h3>Chocolate Truffle Cake</h3>
+            <p>Intense, smooth, and very chocolate-forward, often described as a "deluxe" or "indulgent" dessert.</p>
+            <p class="price">₱499.00</p>
+            <button class="add-to-cart" data-name="Chocolate Truffle Cake" data-price="499.00">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/Choco-bread.jpg" alt="Chocolate Bread">
+            <h3>Chocolate Bread</h3>
+            <p>Soft and rich cocoa flavor.</p>
+            <p class="price">₱15.50</p>
+            <button class="add-to-cart" data-name="Chocolate Bread" data-price="15.50">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/Cinnamon.jpg" alt="Cinnamon Rolls">
+            <h3>Cinnamon Rolls</h3>
+            <p>Warm, sweet, and comforting.</p>
+            <p class="price">₱10.00</p>
+            <button class="add-to-cart" data-name="Cinnamon Rolls" data-price="3.00">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/Pandesal.jpg" alt="Cheese Pandesal">
+            <h3>Malunggay Pandesal</h3>
+            <p>Classic Filipino favorite.</p>
+            
+        
+            <p class="price">₱2.00</p>
+            <button class="add-to-cart" data-name="Malunggay Pandesal" data-price="2.50">Add to Cart</button>
+        </div>
+        
+        <div class="card">
+            <img src="images/Binangkal.jpg" alt="Chocolate Bread">
+            <h3>Binangkal Bread</h3>
+            <p>Crunchy sesame-coated bread with a soft inside.</p>
+            <p class="price">₱5.00</p>
+            <button class="add-to-cart" data-name="Binangkal Bread" data-price="3.50">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/Banana-bread.webp" alt="Cinnamon Rolls">
+            <h3>Banana Bread</h3>
+            <p>Moist, sweet, and comforting homemade loaf.</p>
+            <p class="price">₱15.00</p>
+            <button class="add-to-cart" data-name="Banana Bread" data-price="5.00">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/Putok.jpg" alt="Cheese Pandesal">
+            <h3>Putok Bread</h3>
+            <p>Soft Filipino bread with a sweet crunchy top, Another Classic Filipino favorite.</p>
+            <p class="price">₱5.00</p>
+            <button class="add-to-cart" data-name="Putok Bread" data-price="2.00">Add to Cart</button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Cart Modal -->
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total">Total: ₱0.00</div>
+        <button id="order-btn">Order Now</button>
+        
+        <!-- Order Form -->
+        <div id="order-form" style="display: none;">
+            <h3>Delivery Information</h3>
+            <form id="delivery-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+                
+                <label for="address">Address:</label>
+                <textarea id="address" required></textarea>
+                
+                <label for="instructions">Special Instructions:</label>
+                <textarea id="instructions"></textarea>
+                
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

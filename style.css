@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #F7F3EF;
+    color: #5A4634;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #5A4634;
+}
+
+/* ACTIVE LINK */
+.nav-links a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #A67C52;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(247,243,239,0.7), rgba(247,243,239,0.7)),
+        url('https://images.unsplash.com/photo-1509440159596-0249088772ff') center/cover;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #7A6653;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: #A67C52;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6B4F3A;
+}
+
+/* SECTION */
+.section {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* MENU GRID */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.menu-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/* CARDS CONTAINER */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding-top: 20px;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* IMAGE FIX */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* PRICE */
+.price {
+    font-weight: bold;
+    color: #A67C52;
+    margin: 10px 0;
+}
+
+/* ADD TO CART BUTTON */
+.add-to-cart {
+    background: #A67C52;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #6B4F3A;
+}
+
+/* CART LINK */
+#cart-link {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #5A4634;
+    font-weight: bold;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+#cart-items {
+    margin: 20px 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#cart-total {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#order-btn {
+    background: #A67C52;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#order-btn:hover {
+    background: #6B4F3A;
+}
+
+/* ORDER FORM */
+#order-form {
+    margin-top: 20px;
+}
+
+#order-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#order-form input, #order-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#order-form button {
+    background: #A67C52;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#order-form button:hover {
+    background: #6B4F3A;
+}
